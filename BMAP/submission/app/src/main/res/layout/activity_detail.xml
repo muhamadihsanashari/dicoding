@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_detail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tv_mount_name"
+            android:layout_below="@+id/img_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Mountain Name"
+            android:textSize="24sp"
+            android:fontFamily="@font/segoeuib"
+            android:textColor="@color/fontColorTitle"/>
+
+        <TextView
+            android:id="@+id/tv_mount_loc"
+            android:layout_below="@+id/tv_mount_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Location"
+            android:textColor="@color/fontColorLoc"
+            android:textSize="20sp"
+            android:fontFamily="@font/segoeui"
+            android:lines="1"/>
+
+        <TextView
+            android:id="@+id/tv_mount_des"
+            android:layout_below="@+id/tv_mount_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Descriptions"
+            android:textSize="16sp"
+            android:fontFamily="@font/segoeui"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:layout_below="@+id/tv_mount_des"
+            android:id="@+id/btn_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Book Ticket"
+            android:textAllCaps="false"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.Material.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_detail"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_mount_name"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="2" />
+
+    </RelativeLayout>
+</ScrollView>
